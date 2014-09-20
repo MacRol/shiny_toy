@@ -30,3 +30,19 @@ Additional Details on the Data and the Application
 - The results of the K-Means algorithm are shown by drawing coloured circles around the original points, with the colour indicating the cluster to which K-Means assigned that point
 - The user input for K is fed to `kmeans`, and the user input for seed is fed to `set.seed` right ahead of calling `kmeans` in server.R
 
+
+Final Slide Executing some R Code
+============================================================
+
+- Here is a plot of a standard normal! :-)
+- Draw the sample mean in red and the sample median in blue
+
+
+```r
+x <- rnorm(1000)
+hist(x)
+abline(v = mean(x), col = "red")
+abline(v = median(x), col = "darkblue")
+```
+
+![plot of chunk unnamed-chunk-1](shiny_pres-figure/unnamed-chunk-1.png) 
