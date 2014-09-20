@@ -39,7 +39,8 @@ Final Slide Executing some R Code
 
 
 ```r
-x <- rnorm(1000)
+set.seed(111)
+x <- rnorm(200)
 hist(x)
 abline(v = mean(x), col = "red")
 abline(v = median(x), col = "darkblue")
