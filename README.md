@@ -6,6 +6,9 @@ Toy Shiny Application for Coursera's Developing Data Products
 
 The repository contains the pair of files ui.R and server.R for a shiny application called shiny_toy.  
 
+A corresponding html presentation has been posted on RPubs, at the following URL:  
+http://rpubs.com/MacRol/shiny_toy  
+
 The application visually demonstrates how K-Means clustering depends on the initial (random) pick of centroids with which the algorithm starts off, before iterating between the grouping adjustments and the centroid adjustments.  
 
 The application operates on a set of 100 bi-variate points, generated in R by picking 5 centroids uniformly at random within a square range in the two-dimensional plane, then generating 5 sets of 20 points each, via a bivariate normal distribution centered on each of the 5 centroids, and with an identical orthogonal covariance matrix for the 5 groups of 20 points each. So the data is in fact generated as 5 clusters of 20 points each, although the value of the standard deviation in the diagonal of the covariance matrix makes it likely to have geometric overlaps among the clusters.  
